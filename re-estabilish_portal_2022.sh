@@ -15,7 +15,7 @@ cd
 # Script para reiniciar todos os containers
 
 docker restart mongodb-observatorio
-docker restart controle-acesso-backend
+docker restart controle-acesso
 docker restart configurador-backend
 docker restart grafico-backend
 docker restart paineis-backend
