@@ -15,7 +15,7 @@ systemctl start nginx
 sudo certbot --nginx -d observatorio.smped.prefeitura.sp.gov.br -d adm.observatorio.smped.prefeitura.sp.gov.br -d api.observatorio.smped.prefeitura.sp.gov.br -d configurador.observatorio.smped.prefeitura.sp.gov.br -d graficos.observatorio.smped.prefeitura.sp.gov.br -d paineis.observatorio.smped.prefeitura.sp.gov.br
 
 #Attempt to reinstall this existing certificate
-echo 1
+# echo "1" | ./your_script
 
 # Parar nginx para desocupar a porta de rede http para o container do proxy
 sudo systemctl stop nginx
@@ -32,4 +32,4 @@ cd implantacao_2020_08_18
 cd ObservatorioSMPED
 cd proxy
 docker-compose up -d --build
-cd ..
+cd 
